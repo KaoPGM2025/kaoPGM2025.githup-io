@@ -1,0 +1,119 @@
+/* รีเซ็ตพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* พื้นหลังเว็บ */
+  body {
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* กล่องกลาง */
+  .container {
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* หัวข้อ */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* ฟอร์มกรอกข้อมูล */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* ปุ่ม submit */
+  button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+  /* สรุปยอด */
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* รายการบันทึก */
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid;
+    border-radius: 5px;
+  }
+  
+  /* รายรับ */
+  .income {
+    border-color: #2ecc71;
+  }
+  
+  /* รายจ่าย */
+  .expense {
+    border-color: #e74c3c;
+  }
+  
+  /* ปุ่มลบ */
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* ปุ่มลบ: hover */
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsive มือถือ */
+  @media (max-width: 600px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
