@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บันทึกรายรับ-รายจ่าย</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>บันทึกรายรับ-รายจ่าย</h1>
+    <div class="summary">
+        <div class="summary-item income">
+          <h3>รายรับ</h3>
+          <p id="total-income">0.00 บาท</p>
+        </div>
+        <div class="summary-item expense">
+          <h3>รายจ่าย</h3>
+          <p id="total-expense">0.00 บาท</p>
+        </div>
+        <div class="summary-item balance">
+          <h3>ยอดคงเหลือ</h3>
+          <p id="balance">0.00 บาท</p>
+        </div>
+      </div>
+      
+    <form id="transaction-form">
+      <input type="text" id="description" placeholder="รายละเอียด..." required>
+      <input type="number" id="amount" placeholder="จำนวนเงิน..." required>
+      <select id="type">
+        <option value="income">รายรับ</option>
+        <option value="expense">รายจ่าย</option>
+      </select>
+      <button type="submit">เพิ่มรายการ</button>
+    </form>
+
+    <h2>ประวัติรายการ</h2>
+    <ul id="transaction-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
